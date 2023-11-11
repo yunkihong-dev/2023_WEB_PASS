@@ -8,9 +8,9 @@ app.listen(PORT, function() {
 }); 
 
 app.get('/main', function(req, res) {
-	res.send('main 페이지입니다.');
+	res.sendFile(__dirname + '/main.html');
 });
 
 app.get('/test', function(req, res) {
-	res.send('test 페이지입니다.');
+	res.sendFile(__dirname + '/test.html');
 });
