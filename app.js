@@ -9,9 +9,9 @@ app.listen(PORT, function() {
 }); 
 
 app.get('/main', function(req, res) {
-	res.sendFile(__dirname + '/main.html');
+	res.sendFile(__dirname + '/pages/main.html');
 });
 
 app.get('/test', function(req, res) {
-	res.sendFile(__dirname + '/test.html');
+	res.sendFile(__dirname + '/pages/test.html');
 });
